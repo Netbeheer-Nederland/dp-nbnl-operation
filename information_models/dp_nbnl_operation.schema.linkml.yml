@@ -1,0 +1,14 @@
+name: dp-nbnl-operation
+title: NBNL Operation (OP)
+description: |-
+  Information models for the NBNL Operation data product.
+id: http://modellen.netbeheernederland.nl/operation/dp-nbnl-operation
+license: https://www.apache.org/licenses/LICENSE-2.0.txt
+imports:
+- linkml:types
+prefixes:
+  linkml: https://w3id.org/linkml/
+  cim: https://cim.ucaiug.io/ns#
+  dct: http://purl.org/dc/terms/
+  gh: https://github.com/
+classes: {}
