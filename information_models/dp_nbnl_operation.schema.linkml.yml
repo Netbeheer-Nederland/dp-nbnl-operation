@@ -212,7 +212,7 @@ classes:
           \ attributes that identify CIM object elements."
         slot_uri: cim:IdentifiedObject.mRID
         range: string
-        required: false
+        required: true
         multivalued: false
       name:
         description: "The name is any free human readable and possibly non unique\
