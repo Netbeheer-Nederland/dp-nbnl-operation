@@ -1,0 +1,6 @@
+name: dp-nbnl-operation
+version: v0.draft
+title: NBNL Operation (OP)
+nav:
+- modules/ROOT/nav.adoc
+- modules/schema/nav.adoc
