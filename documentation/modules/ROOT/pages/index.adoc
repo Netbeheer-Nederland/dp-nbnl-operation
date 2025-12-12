@@ -5,18 +5,33 @@
 .Data Product
 [d2,svg,theme=4]
 ----
-grid-rows: 5
-grid-columns: 5
-
-horizontal-gap: 160
-vertical-gap: 80
-
 vars: {
   d2-config: {
+    layout-engine: elk
     pad: 20
   }
 }
 
+classes: {
+  grid: {
+    style: {
+      fill: "#eccfcb"
+      shadow: true
+    }
+  }
+  enterprise: {
+    style: {
+      fill: "#d1e7c2"
+      shadow: true
+    }
+  }
+  market: {
+    style: {
+      fill: "#fffbef"
+      shadow: true
+    }
+  }
+}
 
 legend: "" {
   style: {
@@ -65,38 +80,16 @@ legend: "" {
   }
 }
 
-classes: {
-  empty: {
-    label: ""
-    style: {
-      fill: transparent
-      stroke: transparent
-    }
-  }
-  grid: {
-    style: {
-      fill: "#eccfcb"
-      shadow: true
-    }
-  }
-  enterprise: {
-    style: {
-      fill: "#d1e7c2"
-      shadow: true
-    }
-  }
-  market: {
-    style: {
-      fill: "#fffbef"
-      shadow: true
-    }
-  }
-  dataset: {
-    style: {
-      shadow: true
-    }
-  }
-}
+direction: down
+
+Terminal.class: grid
+Analog.class: grid
+AnalogValue.class: grid
+PowerSystemResource.class: grid
+
+Analog -> Terminal
+Analog -> PowerSystemResource
+AnalogValue -> Analog
 ----
 
 == Additional artifacts
