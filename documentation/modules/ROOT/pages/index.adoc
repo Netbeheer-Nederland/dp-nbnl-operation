@@ -1,6 +1,6 @@
 = NBNL Operation (OP)
 
-
+This data product is an implementation of the NBNL Operation Profile.
 
 .Data Product
 [d2,svg,theme=4]
@@ -92,7 +92,16 @@ Analog -> PowerSystemResource
 AnalogValue -> Analog
 ----
 
+This data product requires the use of an _Equipment_ dataset for instantiation
+of its datasets.
+
+== Required background
+
+* knowledge of connectivity in the CIM;
+* knowledge of identification of individuals in the CIM;
+* knowledge of mRID persistence and master data management.
+
 == Additional artifacts
 
-* xref:schema:attachment$schemas/shacl/dp_nbnl_operation.shacl.json[JSON schema]
+* xref:schema:attachment$schemas/shacl/dp_nbnl_operation.shacl.ttl[SHACL schema]
 * xref:schema:attachment$examples/jsonld/dp_nbnl_operation.example.json[Example JSON-LD instance data]
