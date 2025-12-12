@@ -1,1 +1,0 @@
-* xref:dp-nbnl-operation::design.adoc[]
