@@ -94,5 +94,5 @@ AnalogValue -> Analog
 
 == Additional artifacts
 
-* xref:schema:attachment$schemas/json_schema/dp_nbnl_operation.json_schema.json[JSON schema]
-* xref:schema:attachment$examples/dp_nbnl_operation.example.json[Example JSON instance data]
+* xref:schema:attachment$schemas/shacl/dp_nbnl_operation.shacl.json[JSON schema]
+* xref:schema:attachment$examples/jsonld/dp_nbnl_operation.example.json[Example JSON-LD instance data]
