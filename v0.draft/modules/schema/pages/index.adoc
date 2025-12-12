@@ -7,9 +7,6 @@
 | Name | Description
 
 
-| xref::class/ACDCTerminal.adoc[`ACDCTerminal`]
-| +++An electrical connection point (AC or DC) to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes.+++
-
 | xref::class/Analog.adoc[`Analog`]
 | +++Analog represents an analog Measurement.+++
 
@@ -54,12 +51,6 @@ never used alone.+++
 
 | xref::class/MeasurementValue.adoc[`MeasurementValue`]
 | +++The current state for a measurement. A state value is an instance of a measurement from a specific source. Measurements can be associated with many state values, each representing a different source for the measurement.+++
-
-| xref::class/PowerSystemResource.adoc[`PowerSystemResource`]
-| +++A power system resource (PSR) can be an item of equipment such as a switch, an equipment container containing many individual items of equipment such as a substation, or an organisational entity such as sub-control area. Power system resources can have measurements associated.+++
-
-| xref::class/Terminal.adoc[`Terminal`]
-| +++An AC electrical connection point to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes.+++
 
 |===
 

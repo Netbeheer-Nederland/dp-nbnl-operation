@@ -4,10 +4,6 @@
 ** Classes
 *** xref::class/Measurement.adoc[Measurement (root)]
 
-*** xref::class/ACDCTerminal.adoc[ACDCTerminal]
-
-
-
 *** xref::class/Analog.adoc[Analog]
 
 
@@ -26,14 +22,6 @@
 
 
 *** xref::class/MeasurementValue.adoc[MeasurementValue]
-
-
-
-*** xref::class/PowerSystemResource.adoc[PowerSystemResource]
-
-
-
-*** xref::class/Terminal.adoc[Terminal]
 
 
 

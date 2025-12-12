@@ -23,10 +23,8 @@
 
 == Class hierarchy
 * *`IdentifiedObject`*
- ** xref::class/ACDCTerminal.adoc[`ACDCTerminal`]
  ** xref::class/IOPoint.adoc[`IOPoint`]
  ** xref::class/Measurement.adoc[`Measurement`]
- ** xref::class/PowerSystemResource.adoc[`PowerSystemResource`]
 
 
 == Slots
@@ -40,7 +38,7 @@
 
 | <<mRID,`mRID`>>
 //| [[slots_table.mRID]]<<mRID,`mRID`>>
-| 0..1 +
+| 1 +
 https://w3id.org/linkml/String[`string`]
 | +++Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is...+++
 | _n/a_
@@ -68,7 +66,7 @@ For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is map
 | URI
 | `cim:IdentifiedObject.mRID`
 | Cardinality
-| 0..1
+| 1
 | Type
 | https://w3id.org/linkml/String[`string`]
 

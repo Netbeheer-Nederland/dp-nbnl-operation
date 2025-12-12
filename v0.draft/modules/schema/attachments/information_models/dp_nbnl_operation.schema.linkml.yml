@@ -114,14 +114,6 @@ enums:
       Wh:
         meaning: cim:UnitSymbol.Wh
 classes:
-  PowerSystemResource:
-    description: A power system resource (PSR) can be an item of equipment such as
-      a switch, an equipment container containing many individual items of equipment
-      such as a substation, or an organisational entity such as sub-control area.
-      Power system resources can have measurements associated.
-    from_schema: https://cim.ucaiug.io/ns#TC57CIM.IEC61970.Base.Core
-    is_a: IdentifiedObject
-    class_uri: cim:PowerSystemResource
   Measurement:
     description: |-
       A Measurement represents any measured, calculated or non-measured
@@ -155,16 +147,6 @@ classes:
     from_schema: https://cim.ucaiug.io/ns#TC57CIM.IEC61970.Base.Meas
     is_a: IdentifiedObject
     attributes:
-      measurementType:
-        description: "Specifies the type of measurement. For example, this specifies\
-          \ if the measurement represents an indoor temperature, outdoor temperature,\
-          \ bus voltage, line flow, etc.\r\nWhen the measurementType is set to \"\
-          Specialization\", the type of Measurement is defined in more detail by the\
-          \ specialized class which inherits from Measurement.\r\n\r\n"
-        slot_uri: cim:Measurement.measurementType
-        range: string
-        required: false
-        multivalued: false
       unitMultiplier:
         description: The unit multiplier of the measured quantity.
         slot_uri: cim:Measurement.unitMultiplier
@@ -181,24 +163,17 @@ classes:
         description: One or more measurements may be associated with a terminal in
           the network.
         slot_uri: cim:Measurement.Terminal
-        range: Terminal
+        range: curie
         required: false
         multivalued: false
       PowerSystemResource:
         description: The power system resource that contains the measurement.
         slot_uri: cim:Measurement.PowerSystemResource
-        range: PowerSystemResource
+        range: curie
         required: false
         multivalued: false
     class_uri: cim:Measurement
     tree_root: true
-  ACDCTerminal:
-    description: An electrical connection point (AC or DC) to a piece of conducting
-      equipment. Terminals are connected at physical connection points called connectivity
-      nodes.
-    from_schema: https://cim.ucaiug.io/ns#TC57CIM.IEC61970.Base.Core
-    is_a: IdentifiedObject
-    class_uri: cim:ACDCTerminal
   IdentifiedObject:
     description: This is a root class to provide common identification for all classes
       needing identification and naming attributes.
@@ -213,7 +188,8 @@ classes:
           \ attributes that identify CIM object elements."
         slot_uri: cim:IdentifiedObject.mRID
         range: string
-        required: false
+        identifier: true
+        required: true
         multivalued: false
       name:
         description: "The name is any free human readable and possibly non unique\
@@ -223,12 +199,6 @@ classes:
         required: false
         multivalued: false
     class_uri: cim:IdentifiedObject
-  Terminal:
-    description: An AC electrical connection point to a piece of conducting equipment.
-      Terminals are connected at physical connection points called connectivity nodes.
-    from_schema: https://cim.ucaiug.io/ns#TC57CIM.IEC61970.Base.Core
-    is_a: ACDCTerminal
-    class_uri: cim:Terminal
   Analog:
     description: "Analog represents an analog Measurement.\r\n"
     from_schema: https://cim.ucaiug.io/ns#TC57CIM.IEC61970.Base.Meas
@@ -282,4 +252,3 @@ classes:
     from_schema: https://cim.ucaiug.io/ns#TC57CIM.IEC61970.Base.Meas
     is_a: IdentifiedObject
     class_uri: cim:IOPoint
-
